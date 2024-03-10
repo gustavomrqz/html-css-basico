@@ -5,7 +5,7 @@ body {
   gap: 60px;
   justify-items: center;
   margin-top: 60px;
-  background-color: #f7f7f7;  
+  background-color: #f7f7f7;
 }
 
 img {
@@ -62,13 +62,13 @@ p {
   border-color: #e21;
 }
 
-.container {
+.conteudo {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1000px;
 }
 
-.intro {
+.introducao {
   background: #fff;
   padding: 40px;
   text-align: right;
@@ -79,12 +79,12 @@ p {
   justify-items: end;
 }
 
-.intro h1 {
+.introducao h1 {
   font-size: 2rem;
 }
 
-.intro::before {
-  content: '';
+.introducao::before {
+  content: "";
   width: 60px;
   height: 4px;
   background: #e21;
@@ -93,12 +93,12 @@ p {
   right: -30px;
 }
 
-.intro-cover img {
+.introducao-cover img {
   object-fit: cover;
   height: 100%;
 }
 
-.button {
+.botao {
   background: #e21;
   color: #fff;
   padding: 1rem 2rem;
@@ -106,27 +106,27 @@ p {
   text-transform: uppercase;
 }
 
-.button:hover {
+.botao:hover {
   background: #900;
 }
 
-.subtitle {
+.subtitulo {
   font-size: 4rem;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.2);
   text-align: right;
   padding: 40px;
   align-self: center;
-  background-image: url('./img/onda.svg');
+  background-image: url("./img/onda.svg");
   /* word-break: break-all; */
 }
 
-.advantages {
+.vantagens {
   background: #fff;
   padding: 40px;
 }
 
-.advantages-item {
+.vantagens-item {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
@@ -134,19 +134,19 @@ p {
   border-left: 4px solid transparent;
 }
 
-.advantages-item:nth-child(odd) {
+.vantagens-item:nth-child(odd) {
   background: #f7f7f7;
 }
 
-.advantages-item:hover {
+.vantagens-item:hover {
   border-color: #e21;
 }
 
-.advantages-item p {
+.vantagens-item p {
   grid-column: 2;
 }
 
-.footer {
+.rodape {
   background: #fff;
   width: 100%;
   text-align: center;
@@ -155,11 +155,10 @@ p {
 }
 
 @media (max-width: 1000px) {
-  .advantage-container {
+  .conteudo-vantagem {
     grid-template-columns: 1fr;
   }
-
-  .subtitle {
+  .subtitulo {
     text-align: center;
   }
 }
@@ -169,36 +168,29 @@ p {
     gap: 30px;
     margin-top: 20px;
   }
-  
   .header {
     gap: 30px;
   }
-
-  .container {
+  .conteudo {
     grid-template-columns: 1fr;
   }
-
-  .intro {
+  .introducao {
     text-align: left;
     justify-items: start;
   }
-
-  .intro::before {
+  .introducao::before {
     display: none;
   }
-
-  .subtitle {
+  .subtitulo {
     font-size: 3rem;
   }
 }
 
 @media (max-width: 400px) {
-  .subtitle {
+  .subtitulo {
     font-size: 2rem;
   }
-
   p {
     font-size: 1rem;
   }
-
 }
